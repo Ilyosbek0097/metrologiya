@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Shablon;
-use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
+use App\Models\Shablon;
+
+use Illuminate\Http\Request;
+use PDF;
 
 class AdminController extends Controller
 {
@@ -151,7 +153,14 @@ class AdminController extends Controller
        }
        public function allshablon()
        {
-           return view('dashboards.admins.allshablon');
+           $all_data = Shablon::all();
+           //view("blog", compact("posts"));
+           return view('dashboards.admins.allshablon',compact('all_data'));
        }
-
+       public function download_pdf($id)
+       {
+           $shablon = Shablon::find($id);
+           $pdf = PDF::loadView('dashboards.admins.pdfpage',compact('shablon'));
+           return $pdf->download('pdfpage.pdf');
+       }
 }

@@ -16,10 +16,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="{{ URL::to('plugins/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{ asset('plugins/ijaboCropTool/ijaboCropTool.min.css') }}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{ URL::to('dist/css/adminlte.min.css')}}">
+    
+    <link rel="stylesheet" href="{{ URL::to('plugins/fontawesome-free/css/all.min.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::to('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::to('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('dist/css/adminlte.min.css?v=3.2.0')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/jqvmap/jqvmap.min.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('dist/css/adminlte.min.css?v=3.2.0')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/daterangepicker/daterangepicker.css')}}">
+
+    <link rel="stylesheet" href="{{ URL::to('plugins/summernote/summernote-bs4.min.css')}}">
 </head>
 
 <body class="sidebar-mini layout-fixed text-sm">
@@ -52,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="{{ \URL::to('/')}}" class="brand-link">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                <img src="{{ URL::to('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">Your Site</span>
             </a>
@@ -160,12 +182,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="{{ URL::to('plugins/jquery/jquery.min.js')}}"></script>
+    <!-- Data-Table Script -->
+
+
+<script src="{{ URL::to('plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-buttons/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-buttons/js/buttons.bootstrap4.min.js')}}"></script>
+<script src="{{ URL::to('plugins/jszip/jszip.min.js')}}"></script>
+<script src="{{ URL::to('plugins/pdfmake/pdfmake.min.js')}}"></script>
+<script src="{{ URL::to('plugins/pdfmake/vfs_fonts.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
+<script src="{{ URL::to('plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
+
+<script src="{{ URL::to('dist/js/adminlte.min.js?v=3.2.0')}}"></script>
+
+<script src="{{ URL::to('dist/js/demo.js')}}"></script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');    
+  });
+</script>
     <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('plugins/ijaboCropTool/ijaboCropTool.min.js') }}"></script>
+    <script src="{{ URL::to('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ URL::to('plugins/ijaboCropTool/ijaboCropTool.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <script src="{{ URL::to('dist/js/adminlte.min.js')}}"></script>
+
+
 
     {{-- CUSTOM JS CODES --}}
     <script>

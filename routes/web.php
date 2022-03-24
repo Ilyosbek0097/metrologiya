@@ -39,6 +39,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
         Route::post('addshablon_form',[AdminController::class,'addshablon_form'])->name('admin.addshablon_form');
 
         Route::get('allshablon',[AdminController::class,'allshablon'])->name('admin.allshablon');
+        Route::get('download_pdf/{id}',[AdminController::class,'download_pdf'])->name('admin.download_pdf');
 
 
         Route::post('update-profile-info',[AdminController::class,'updateInfo'])->name('adminUpdateInfo');
