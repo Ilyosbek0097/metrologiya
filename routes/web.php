@@ -38,6 +38,8 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
         Route::get('addshablon',[AdminController::class,'addshablon'])->name('admin.addshablon');
         Route::post('addshablon_form',[AdminController::class,'addshablon_form'])->name('admin.addshablon_form');
 
+        Route::get('allshablon',[AdminController::class,'allshablon'])->name('admin.allshablon');
+
 
         Route::post('update-profile-info',[AdminController::class,'updateInfo'])->name('adminUpdateInfo');
         Route::post('change-profile-picture',[AdminController::class,'updatePicture'])->name('adminPictureUpdate');

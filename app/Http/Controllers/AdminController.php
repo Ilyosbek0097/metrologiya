@@ -149,5 +149,9 @@ class AdminController extends Controller
 
 
        }
+       public function allshablon()
+       {
+           return view('dashboards.admins.allshablon');
+       }
 
 }

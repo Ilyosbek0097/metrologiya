@@ -113,8 +113,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin.addshablon')}}"
-                                class="nav-link {{ (request()->is('admin/addshablon*')) ? 'active' : '' }}">
+                            <a href="{{ route('admin.allshablon')}}"
+                                class="nav-link {{ (request()->is('admin/allshablon*')) ? 'active' : '' }}">
                                 <i class="nav-icon fa fa-th-large"></i>
                                 <p>
                                    Barcha Hujjatlar
