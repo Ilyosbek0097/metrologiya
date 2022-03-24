@@ -7,7 +7,9 @@ use App\Models\User;
 use App\Models\Shablon;
 
 use Illuminate\Http\Request;
+
 use PDF;
+
 
 class AdminController extends Controller
 {
@@ -161,6 +163,6 @@ class AdminController extends Controller
        {
            $shablon = Shablon::find($id);
            $pdf = PDF::loadView('dashboards.admins.pdfpage',compact('shablon'));
-           return $pdf->download('pdfpage.pdf');
+           return $pdf->stream('pdfpage.pdf');
        }
 }
