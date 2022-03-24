@@ -89,11 +89,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </p>
                 </a>
               </li>
-          <li class="nav-item">
-            <a href="{{ route('admin.settings')}}" class="nav-link {{ (request()->is('admin/settings*')) ? 'active' : '' }}">
-              <i class="nav-icon fas fa-cog"></i>
+              <li class="nav-item">
+                <a href="{{ route('admin.settings')}}" class="nav-link {{ (request()->is('admin/settings*')) ? 'active' : '' }}">
+                  <i class="nav-icon fas fa-cog"></i>
+                  <p>
+                  Settings
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+            <a href="{{ route('admin.addshablon')}}" class="nav-link {{ (request()->is('admin/addshablon*')) ? 'active' : '' }}">
+              <i class="nav-icon fas fa-file"></i>
               <p>
-               Settings
+               Shablon Qo'shish
               </p>
             </a>
           </li>

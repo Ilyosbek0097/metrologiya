@@ -116,4 +116,10 @@ class AdminController extends Controller
            }
        }
 
+
+       public function addshablon()
+       {
+           return view('dashboards.admins.addshablon');
+       }
+
 }
