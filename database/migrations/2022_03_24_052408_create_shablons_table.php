@@ -25,7 +25,6 @@ class CreateShablonsTable extends Migration
             $table->string('tayyorlovchi');
             $table->string('import_mamlakat');
             $table->string('parametrlari_nomi');
-            $table->string('xatolik_chegaralari');
             $table->string('nomlanishi_zavod_raqami');
             $table->string('normativ_hujjat_nomi');
             $table->string('turining_tarifi');

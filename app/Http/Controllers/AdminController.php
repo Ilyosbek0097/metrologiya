@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Shablon;
 use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
@@ -120,6 +121,33 @@ class AdminController extends Controller
        public function addshablon()
        {
            return view('dashboards.admins.addshablon');
+       }
+       public function addshablon_form(Request $req)
+       {
+           $shablon = new Shablon();
+           $shablon->xizmat_nomi = $req->xizmat_nomi;
+           $shablon->tartib_raqami = $req->tartib_raqami;
+           $shablon->amal_qilish_muddati = $req->amal_qilish_muddati;
+           $shablon->etalonlar_nomi = $req->etalonlar_nomi;
+           $shablon->xujjat_belgilanishi = $req->xujjat_belgilanishi;
+           $shablon->metrologik_xizmat_nomi = $req->metrologik_xizmat_nomi;
+           $shablon->xizmat_egasi = $req->xizmat_egasi;
+           $shablon->tayyorlovchi = $req->tayyorlovchi;
+           $shablon->import_mamlakat = $req->import_mamlakat;
+           $shablon->parametrlari_nomi = $req->parametrlari_nomi;
+           $shablon->nomlanishi_zavod_raqami = $req->nomlanishi_zavod_raqami;
+           $shablon->normativ_hujjat_nomi = $req->normativ_hujjat_nomi;
+           $shablon->turining_tarifi = $req->turining_tarifi;
+           $shablon->qiyoslovchi = $req->qiyoslovchi;
+           $shablon->sanasi = $req->sanasi;
+
+           $shablon->save();
+
+           return redirect()->route('admin.addshablon');
+
+
+
+
        }
 
 }

@@ -36,6 +36,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
 
         // My Kode
         Route::get('addshablon',[AdminController::class,'addshablon'])->name('admin.addshablon');
+        Route::post('addshablon_form',[AdminController::class,'addshablon_form'])->name('admin.addshablon_form');
 
 
         Route::post('update-profile-info',[AdminController::class,'updateInfo'])->name('adminUpdateInfo');
