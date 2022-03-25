@@ -15,6 +15,9 @@
         margin: 10px;
         /* padding: 20px; */
     }
+    #container{
+        margin: 0 auto;
+    }
     body{
         
         border: 2px double black;
@@ -67,7 +70,7 @@
         margin-top: 20px;
         text-align: center;
         line-height: 0px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 900;
         color: red;
         font-family: Arial, Helvetica, sans-serif
@@ -76,7 +79,7 @@
         margin-top: 25px;
         text-align: center;
         line-height: 0px;
-        font-size: 24px;
+        font-size: 22px;
         color: red;
         font-weight: 900;
         text-transform: uppercase;
@@ -85,10 +88,11 @@
     #left{
         clear: both;
         float:left;
+        margin-top: -10px;
         /* border: 1px solid green; */
     }
     #left img{
-        padding-left: 30px;
+        padding-left: 10px;
         width: 100px;
         
     }
@@ -100,22 +104,27 @@
         font-weight: 900;
         /* border: 1px solid yellow; */
         text-align: right;
-        padding-right: 30px;
+        padding-right: 10px;
+        margin-top: -10px;
 
     }
     #ushbu_guvohnoma{
         clear: both;
+        /* float: left; */
         /* border: 1px solid red; */
         font-family:'Times New Roman', Times, serif;
         font-weight: 900;
-        font-size: 15px;
-        padding-left: 30px;
+        font-size: 15px;       
+        padding-left: 10px;
+       line-height: -10px;
     }
 
     /* Begin Row  */
     #malumot
     {
         clear: both;
+    
+    
         /* border: 1px solid red; */
     }
     #left_data
@@ -123,22 +132,24 @@
         /* border: 1px solid orange; */
         float: left;
         width: 80%;
-        line-height: 3px;
+        line-height: -10px;
         text-align: center;
         margin: 3px 20px;
     }
     #left_data #data_text{
-        color: black;
+        /* border: 1px solid blue;    */
+        color: black;        
         line-height: 3px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         font-size: 15px;
     }
     #left_data #data_chiziq{
-        width: 94%;
+        width: 95%;
     }
     #left_data #data_malumot{
         color: black;
+        font-weight: 100;
         font-family: 'Times New Roman', Times, serif;
         font-size: 12px;
         padding-top: 2px;
@@ -150,8 +161,8 @@
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px;        /* margin-bottom: 30px; */
     }
     /* row 1 */
     #malumot1
@@ -613,20 +624,20 @@
                 </p>
             </div>
         </div>
+        
         <div id="malumot">
             <div id="left_data">
-                <div id="data_text">
+                <p id="data_text" >
                     Ko'p funksiyali kalibrator MC-6; Yuk porshenli manometr МП-0.4
-                </div>
-                <div id="data_chiziq">
-                    <hr>
-                </div>
-                <div id="data_malumot">
+                </p>
+
+                <hr id="data_chiziq" style="line-height: -10px; margin-top: -5px;">
+                <p id="data_malumot">
                     (etalonlar (namunaviy o'lchash vositalari)ning belgilanishi va nomi, qiyoslangan sanasi)
-                </div>
+                </p>                
             </div>
-            <div id="right_data">                   
-                        foydalangan holda                     
+            <div id="right_data">
+                foydalangan holda
             </div>
         </div>
         <div id="malumot1">
