@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Auth;
 use App\Models\User;
 use App\Models\Shablon;
-
 use Illuminate\Http\Request;
 
 use PDF;
@@ -161,8 +160,15 @@ class AdminController extends Controller
        }
        public function download_pdf($id)
        {
+           $path = base_path('124.jpg');
+           $type = pathinfo($path, PATHINFO_EXTENSION);
+           $data = file_get_contents($path);
+           $pic = 'data:image/' . $type. ';base64,' . base64_encode($data);
            $shablon = Shablon::find($id);
-           $pdf = PDF::loadView('dashboards.admins.pdfpage',compact('shablon'));
+           $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('dashboards.admins.pdfpage',compact('shablon','pic'));
+            // $html = mb_convert_encoding($pdf, 'HTML-ENTITIES', 'UTF-8');
+            // $html_decode = html_entity_decode($html);
+           $pdf->setPaper('A4','portrait');
            return $pdf->stream('pdfpage.pdf');
        }
 }

@@ -25,9 +25,7 @@
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
                                     aria-label="Browser: activate to sort column ascending">Tartib Raqami</th>
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-label="Platform(s): activate to sort column ascending">Platform(s)</th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
-                                    aria-label="Engine version: activate to sort column ascending">Engine version</th>
+                                    aria-label="Platform(s): activate to sort column ascending">Zavod Raqami</th>                                
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1"
                                     aria-label="CSS grade: activate to sort column ascending">Amallar</th>
                             </tr>
@@ -37,10 +35,9 @@
 
                                 @foreach($all_data as $data)
                             <tr>
-                                <td class="dtr-control sorting_1" tabindex="0">{{$data->id}}</td>
-                                <td>{{$data->xizmat_nomi}}</td>
+                                <td class="dtr-control sorting_1" tabindex="0">{{$data->id}}</td>                                
                                 <td>{{$data->tartib_raqami}}</td>
-                                <td>{{$data->etalonlar_nomi}}</td>
+                                <td>{{$data->nomlanishi_zavod_raqami}}</td>                               
                                 <td>
                                     <a href="#" class="btn btn-warning" ><i class="fa fa-edit" title="Tahrirlash"></i></a>                                   
                                     <a href="{{ route('admin.download_pdf',['id'=>$data->id])}}" class="btn btn-info" ><i class="fa fa-download" title="Printer"></i></a>                                  
@@ -57,8 +54,7 @@
                                 <th rowspan="1" colspan="1">Rendering engine</th>
                                 <th rowspan="1" colspan="1">Browser</th>
                                 <th rowspan="1" colspan="1">Platform(s)</th>
-                                <th rowspan="1" colspan="1">Engine version</th>
-                                <th rowspan="1" colspan="1">CSS grade</th>
+                                <th rowspan="1" colspan="1">Engine version</th>                                
                             </tr>
                         </tfoot>
                     </table>

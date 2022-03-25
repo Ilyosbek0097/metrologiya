@@ -154,6 +154,7 @@ return array(
          * @var string
          */
         "default_font" => "serif",
+        //  // "default_font" => "dejavu sans","dejavu sans condensed", "dejavu sans mono","dejavu serif", "dejavu serif condense",
 
         /**
          * Image DPI setting
