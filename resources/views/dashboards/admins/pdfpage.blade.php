@@ -1,3 +1,4 @@
+<?php use SimpleSoftwareIO\QrCode\Facades\QrCode; ?>
 <!DOCTYPE html>
 <html lang="ru  ">
 <head>
@@ -344,17 +345,17 @@
     #malumot5
     {
         clear: both;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         /* border: 1px solid red; */
     }
     #left_data5
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 70%;
-        line-height: 3px;
+        width: 56%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data5 #data_text5{
         color: black;
@@ -364,15 +365,17 @@
         font-size: 15px;
     }
     #left_data5 #data_chiziq5{
-        width: 75%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data5 #data_malumot5{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         padding-top: 2px;
-        width: 74%;
+        /* width: 74%; */
     }
     #right_data5{
         /* border: 1px solid blue; */
@@ -380,8 +383,8 @@
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
     }
 
     /* Row 6 */
@@ -394,25 +397,27 @@
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 100%;
-        line-height: 3px;
+        width: 94%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data6 #data_text6{
         color: black;
-        line-height: 3px;
+        line-height: -10px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         font-size: 15px;
     }
     #left_data6 #data_chiziq6{
-        width: 94%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data6 #data_malumot6{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         padding-top: 2px;
         
     }
@@ -421,87 +426,94 @@
     #malumot7
     {
         clear: both;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         /* border: 1px solid red; */
     }
     #left_data7
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 100%;
-        line-height: 3px;
+        width: 77%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data7 #data_text7{
         color: black;
-        line-height: 3px;
+        line-height: -10px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         font-size: 15px;
     }
     #left_data7 #data_chiziq7{
-        width: 75%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data7 #data_malumot7{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         padding-top: 2px;
         /* width: 74%; */
     }
     #right_data7{
         /* border: 1px solid blue; */
+        /* border: 1px solid blue; */
         float: right;
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
     }
      /* Row  8*/
      #malumot8
     {
         clear: both;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         /* border: 1px solid red; */
     }
     #left_data8
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 100%;
-        line-height: 3px;
+        width: 79%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data8 #data_text8{
         color: black;
-        line-height: 3px;
+        line-height: -10px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         font-size: 15px;
     }
     #left_data8 #data_chiziq8{
-        width: 75%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data8 #data_malumot8{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         padding-top: 2px;
         /* width: 74%; */
     }
     #right_data8{
         /* border: 1px solid blue; */
-        float: right;
+         /* border: 1px solid blue; */
+         float: right;
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
+        
     }
     /* Row  9*/
       /* Row 4 */
@@ -514,25 +526,27 @@
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 100%;
-        line-height: 3px;
+        width: 94%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data9 #data_text9{
         color: black;
-        line-height: 3px;
+        line-height: -10px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         font-size: 15px;
     }
     #left_data9 #data_chiziq9{
-        width: 94%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data9 #data_malumot9{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         padding-top: 2px;
         
     }
@@ -542,32 +556,34 @@
      #malumot10
     {
         clear: both;
-        margin-top: 20px;
+       
         /* border: 1px solid red; */
     }
     #left_data10
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 100%;
-        line-height: 3px;
+        width: 77%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data10 #data_text10{
         color: black;
-        line-height: 3px;
+        line-height: -10px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
         font-size: 15px;
     }
     #left_data10 #data_chiziq10{
-        width: 75%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data10 #data_malumot10{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         padding-top: 2px;
         /* width: 74%; */
@@ -578,24 +594,27 @@
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
     }
     /* Row 13 */
     #malumot13
     {
         clear: both;
         float: left;
-        margin: 10px 20px 0px 20px;
+        /* margin: 0px 10px; */
         
         width: 100%;
         /* border: 1px solid red; */
     }
     #data_text13{
         /* border: 1px solid green; */
+        margin: 0 auto;
+        padding: 0 auto;
     }
-    #data_text13 P{
+    #data_text13 p{
         font-weight: 900;
+        font-size: 16px;
         font-family: 'Times New Roman', Times, serif;
 
     }
@@ -713,15 +732,13 @@
         <!-- <div style="clear: both;"></div> -->
         <div id="malumot5">
             <div id="left_data5">
-                <div id="data_text5">
+                <p id="data_text5">
                     ROSSIYA
-                </div>
-                <div id="data_chiziq5">
-                    <hr>
-                </div>
-                <div id="data_malumot5">
+                </p>
+                <hr id="data_chiziq5">
+                <p id="data_malumot5">
                     (o'lchash vositalarining tayyorlovchi - import qiluvchi mamlakat)
-                </div>
+                </p>
             </div>
             <div id="right_data5">                   
                 tomonidan tayyorlangan (import qilingan)                    
@@ -729,30 +746,25 @@
         </div>
         <div id="malumot6">
             <div id="left_data6">
-                <div id="data_text6">
+                <p id="data_text6">
                     O'lchash ko'lami 0÷300 mmHg;
-                </div>
-                <div id="data_chiziq6">
-                    <hr>
-                </div>
-                <div id="data_malumot6">
+                </p>
+                <hr id="data_chiziq6">
+                <p id="data_malumot6">
                 (o'lchash vositalari parametrlarining nomi, o'lchashlar,
-                </div>
+                </p>
             </div>
            
         </div>
-        <div style="clear: both;"></div>
         <div id="malumot7">
             <div id="left_data7">
-                <div id="data_text7">
+                <p id="data_text7">
                     shkala bolinmasi 2mmHg; ± 3mmHg
-                </div>
-                <div id="data_chiziq7">
-                    <hr>
-                </div>
-                <div id="data_malumot7">
+                </p>
+                <hr id="data_chiziq7">
+                <p id="data_malumot7">
                     xatolik chegaralari, aniqlik klassi)
-                </div>
+                </p>
             </div>
             <div id="right_data7">                   
                  metrologik tavsifli                   
@@ -760,15 +772,13 @@
         </div>
         <div id="malumot8">
             <div id="left_data8">
-                <div id="data_text8">
+                <p id="data_text8">
                     Sfigmomanometr Адъютор № 01202834
-                </div>
-                <div id="data_chiziq8">
-                    <hr>
-                </div>
-                <div id="data_malumot8">
+                </p>
+                <hr id="data_chiziq8">
+                <p id="data_malumot8">
                 (o'lchash vositalarining nomlanishi va belgilanishi, zavod raqami)
-                </div>
+                </p>
             </div>
             <div id="right_data8">                   
                 o'lchash vositasi                  
@@ -776,30 +786,24 @@
         </div>
         <div id="malumot9">
             <div id="left_data9">
-                <div id="data_text9">
+                <p id="data_text9">
                 O'z DSt 8.089-2020 “Mexanik , yarim avtomat va avtomat va avtomat noinvaziv arterial bosim
-                </div>
-                <div id="data_chiziq9">
-                    <hr>
-                </div>
-                <div id="data_malumot9">
+                </p>
+                <hr id="data_chiziq9">
+                <p id="data_malumot9">
                 (o'lchash vositalariga qo'yiladigan talablarni reglamentlovchi normativ xujjat belgilanishi va nomi)
-                </div>
-            </div>
-           
-        </div>
-        <div style="clear: both;"></div>
+                </p>
+            </div>           
+        </div>       
         <div id="malumot10">
             <div id="left_data10">
-                <div id="data_text10">
+                <p id="data_text10">
                      
-                </div>
-                <div id="data_chiziq10">
-                    <hr>
-                </div>
-                <div id="data_malumot10">
+                </p>
+                <hr id="data_chiziq10">                
+                <p id="data_malumot10">
                     o'lchash vositasi turining ta'rifi)
-                </div>
+                </p>
             </div>
             <div id="right_data10">                   
              talablariga mosligi                 
@@ -814,6 +818,11 @@
                     </p>                   
                 </div>               
         </div>
+        <div class="visible-print text-center">
+        <img style="width:150px;" src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->generate('https://e-metralogiya.uz/certificate/result/45203')) }}">
+        </div>
+      
+</div>
     </div>
 </body>
 </html>
