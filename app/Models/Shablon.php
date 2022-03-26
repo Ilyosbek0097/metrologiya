@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Shablon extends Model
 {
     use HasFactory;
+    
     protected $fillable = [
         'xizmat_nomi',
         'tartib_raqami',

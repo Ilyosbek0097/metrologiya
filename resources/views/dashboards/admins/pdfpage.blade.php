@@ -134,7 +134,7 @@
         width: 80%;
         line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data #data_text{
         /* border: 1px solid blue;    */
@@ -146,12 +146,16 @@
     }
     #left_data #data_chiziq{
         width: 95%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data #data_malumot{
         color: black;
-        font-weight: 100;
+        /* font-weight: 100; */
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        
+        font-size: 14px;
+        margin-top: -2px;
         padding-top: 2px;
         
     }
@@ -174,13 +178,13 @@
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 80%;
-        line-height: 3px;
+        width: 83%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data1 #data_text1{
-        color: black;
+        color: black;        
         line-height: 3px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 900;
@@ -188,11 +192,16 @@
     }
     #left_data1 #data_chiziq1{
         width: 100%;
+        /* width: 95%; */
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data1 #data_malumot1{
         color: black;
+        /* font-weight: 100; */
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
+        margin-top: -2px;
         padding-top: 2px;
         
     }
@@ -202,8 +211,8 @@
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
     }
     /* Row 2 */
     #malumot2
@@ -215,10 +224,10 @@
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 80%;
-        line-height: 3px;
+        width: 72%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data2 #data_text2{
         color: black;
@@ -228,12 +237,15 @@
         font-size: 15px;
     }
     #left_data2 #data_chiziq2{
-        width: 88%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data2 #data_malumot2{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
+        margin-top: -2px;
         padding-top: 2px;
         
     }
@@ -243,8 +255,8 @@
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
     }
 
     /* Row 3 */
@@ -257,10 +269,10 @@
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 80%;
-        line-height: 3px;
+        width: 84%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data3 #data_text3{
         color: black;
@@ -271,11 +283,13 @@
     }
     #left_data3 #data_chiziq3{
         width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data3 #data_malumot3{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         padding-top: 2px;
         
     }
@@ -285,8 +299,8 @@
         font-weight: 900;
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
-        padding-right: 30px;
-        margin-bottom: 30px;
+        padding-right: 15px;
+        margin-top: 0px; 
     }
 
 
@@ -300,10 +314,10 @@
     {
         /* border: 1px solid orange; */
         float: left;
-        width: 100%;
-        line-height: 3px;
+        width: 94%;
+        line-height: -10px;
         text-align: center;
-        margin: 3px 20px;
+        margin: 0px 10px;
     }
     #left_data4 #data_text4{
         color: black;
@@ -313,12 +327,14 @@
         font-size: 15px;
     }
     #left_data4 #data_chiziq4{
-        width: 94%;
+        width: 100%;
+        line-height: -10px; 
+        margin-top: -5px;
     }
     #left_data4 #data_malumot4{
         color: black;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
         padding-top: 2px;
         
     }
@@ -627,11 +643,11 @@
         
         <div id="malumot">
             <div id="left_data">
-                <p id="data_text" >
-                    Ko'p funksiyali kalibrator MC-6; Yuk porshenli manometr МП-0.4
+                <p id="data_text" >                    
+                    «УПВССЖ 15/40 (0,02-16) m³/h
                 </p>
 
-                <hr id="data_chiziq" style="line-height: -10px; margin-top: -5px;">
+                <hr id="data_chiziq">
                 <p id="data_malumot">
                     (etalonlar (namunaviy o'lchash vositalari)ning belgilanishi va nomi, qiyoslangan sanasi)
                 </p>                
@@ -642,15 +658,13 @@
         </div>
         <div id="malumot1">
             <div id="left_data1">
-                <div id="data_text1">
+                <p id="data_text1">
                     Ko'p funksiyali kalibrator MC-6; Yuk porshenli manometr МП-0.4
-                </div>
-                <div id="data_chiziq1">
-                    <hr>
-                </div>
-                <div id="data_malumot1">
-                (qiyoslash bo'yicha xujjatning belgilanishi va nomlanishi)
-                </div>
+                </p>               
+                <hr id="data_chiziq1">                
+                <p id="data_malumot1">
+                    (qiyoslash bo'yicha xujjatning belgilanishi va nomlanishi)
+                </p>
             </div>
             <div id="right_data1">                   
                 ga muvofiq                   
@@ -658,15 +672,13 @@
         </div>
         <div id="malumot2">
             <div id="left_data2">
-                <div id="data_text2">
+                <p id="data_text2">
                 O‘zMMI DM Qo'qon filiali
-                </div>
-                <div id="data_chiziq2">
-                    <hr>
-                </div>
-                <div id="data_malumot2">
+                </p>
+                <hr id="data_chiziq2">                
+                <p id="data_malumot2">
                 (o'lchash vositalarini qiyoslagan metrologiya xizmatining nomi)
-                </div>
+                </p>
             </div>
             <div id="right_data2">                   
             tomonidan qiyoslangan                   
@@ -674,15 +686,13 @@
         </div>
         <div id="malumot3">
             <div id="left_data3">
-                <div id="data_text3">
+                <p id="data_text3">
                 "FIRDAVS HEALTHY DENTAL" MCHJ 
-                </div>
-                <div id="data_chiziq3">
-                    <hr>
-                </div>
-                <div id="data_malumot3">
+                </p>
+                <hr id="data_chiziq3">
+                <p id="data_malumot3">
                     (o'lchash vositalarining egasi - yuridik shaxs)
-                </div>
+                </p>
             </div>
             <div id="right_data3">                   
                 ga tegishli                     
@@ -690,19 +700,17 @@
         </div>
         <div id="malumot4">
             <div id="left_data4">
-                <div id="data_text4">
-                   -
-                </div>
-                <div id="data_chiziq4">
-                    <hr>
-                </div>
-                <div id="data_malumot4">
+                <p id="data_text4">
+                 Novator
+                </p>
+                <hr id="data_chiziq4">                
+                <p id="data_malumot4">
                     (o'lchash vositalarini tayyorlovchi)
-                </div>
+                </p>
             </div>
            
         </div>
-        <div style="clear: both;"></div>
+        <!-- <div style="clear: both;"></div> -->
         <div id="malumot5">
             <div id="left_data5">
                 <div id="data_text5">
