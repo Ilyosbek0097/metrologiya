@@ -153,8 +153,8 @@ return array(
          * Used if no suitable fonts can be found. This must exist in the font folder.
          * @var string
          */
-        "default_font" => "serif",
-        //  // "default_font" => "dejavu sans","dejavu sans condensed", "dejavu sans mono","dejavu serif", "dejavu serif condense",
+        // "default_font" => "serif",
+        "default_font" => "dejavu sans",
 
         /**
          * Image DPI setting
