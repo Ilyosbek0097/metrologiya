@@ -43,7 +43,7 @@ body {
     color: blue;
     text-transform: uppercase;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'dejavu serif';
 }
@@ -54,7 +54,7 @@ body {
     font-family: 'dejavu serif';
     font-size: 15px;
     color: black;
-    margin-top: -5px;
+    margin-top: -8px;
     font-weight: bold;
     /* line-height: -20px; */
 
@@ -63,7 +63,7 @@ body {
 .chiziq {
     /* line-height: -8px; */
     text-align: center;
-    border: 0.5px solid black;
+    border: 0.2px solid black;
     margin-top: -10px;
     width: 95%;
 }
@@ -173,11 +173,12 @@ body {
     line-height: 3px;
     font-family: 'dejavu serif';
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #left_data #data_chiziq {
     width: 93%;
+    border: 0.2px solid black;
     line-height: -10px;
     margin-top: -5px;
 }
@@ -186,7 +187,7 @@ body {
     color: black;
     font-weight: normal;
     font-family: 'dejavu serif';
-    font-size: 10px;
+    font-size: 11px;
     margin-top: -2px;
     padding-top: 2px;
 
@@ -212,7 +213,7 @@ body {
 #left_data1 {
     /* border: 1px solid orange; */
     float: left;
-    width: 83%;
+    width: 82%;
     line-height: -10px;
     text-align: center;
     margin: 0px 10px;
@@ -223,21 +224,22 @@ body {
     line-height: 3px;
     font-family: 'dejavu serif';
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #left_data1 #data_chiziq1 {
     width: 100%;
     /* width: 95%; */
+    border: 0.2px solid black;
     line-height: -10px;
     margin-top: -5px;
 }
 
 #left_data1 #data_malumot1 {
     color: black;
-    /* font-weight: 100; */
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-weight: normal;
+    font-family:'dejavu serif';
+    font-size: 11px;
     margin-top: -2px;
     padding-top: 2px;
 
@@ -246,9 +248,9 @@ body {
 #right_data1 {
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 }
@@ -262,7 +264,7 @@ body {
 #left_data2 {
     /* border: 1px solid orange; */
     float: left;
-    width: 72%;
+    width: 69%;
     line-height: -10px;
     text-align: center;
     margin: 0px 10px;
@@ -271,21 +273,22 @@ body {
 #left_data2 #data_text2 {
     color: black;
     line-height: 3px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data2 #data_chiziq2 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data2 #data_malumot2 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-family: 'dejavu serif';
+    font-size: 11px;
     margin-top: -2px;
     padding-top: 2px;
 
@@ -294,9 +297,9 @@ body {
 #right_data2 {
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 }
@@ -310,7 +313,7 @@ body {
 #left_data3 {
     /* border: 1px solid orange; */
     float: left;
-    width: 84%;
+    width: 82%;
     line-height: -10px;
     text-align: center;
     margin: 0px 10px;
@@ -319,21 +322,24 @@ body {
 #left_data3 #data_text3 {
     color: black;
     line-height: 3px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data3 #data_chiziq3 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data3 #data_malumot3 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
 
 }
@@ -341,9 +347,9 @@ body {
 #right_data3 {
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 }
@@ -367,21 +373,24 @@ body {
 #left_data4 #data_text4 {
     color: black;
     line-height: 3px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data4 #data_chiziq4 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data4 #data_malumot4 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
 
 }
@@ -406,22 +415,24 @@ body {
 #left_data5 #data_text5 {
     color: black;
     line-height: 3px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data5 #data_chiziq5 {
-    width: 100%;
+    width: 90%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data5 #data_malumot5 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    text-align: center;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
     /* width: 74%; */
 }
@@ -429,9 +440,9 @@ body {
 #right_data5 {
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 }
@@ -453,22 +464,25 @@ body {
 
 #left_data6 #data_text6 {
     color: black;
-    line-height: -10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    line-height: 3px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data6 #data_chiziq6 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data6 #data_malumot6 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
 
 }
@@ -483,7 +497,7 @@ body {
 #left_data7 {
     /* border: 1px solid orange; */
     float: left;
-    width: 77%;
+    width: 74%;
     line-height: -10px;
     text-align: center;
     margin: 0px 10px;
@@ -491,34 +505,35 @@ body {
 
 #left_data7 #data_text7 {
     color: black;
-    line-height: -10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    line-height: 3px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data7 #data_chiziq7 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data7 #data_malumot7 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    text-align: center;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
-    /* width: 74%; */
 }
 
 #right_data7 {
     /* border: 1px solid blue; */
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 }
@@ -533,7 +548,7 @@ body {
 #left_data8 {
     /* border: 1px solid orange; */
     float: left;
-    width: 79%;
+    width: 76%;
     line-height: -10px;
     text-align: center;
     margin: 0px 10px;
@@ -541,34 +556,35 @@ body {
 
 #left_data8 #data_text8 {
     color: black;
-    line-height: -10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    line-height: 3px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data8 #data_chiziq8 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data8 #data_malumot8 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    text-align: center;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
-    /* width: 74%; */
 }
 
 #right_data8 {
     /* border: 1px solid blue; */
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 
@@ -592,22 +608,25 @@ body {
 
 #left_data9 #data_text9 {
     color: black;
-    line-height: -10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    line-height: 3px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data9 #data_chiziq9 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data9 #data_malumot9 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
 
 }
@@ -623,7 +642,7 @@ body {
 #left_data10 {
     /* border: 1px solid orange; */
     float: left;
-    width: 77%;
+    width: 74%;
     line-height: -10px;
     text-align: center;
     margin: 0px 10px;
@@ -631,33 +650,34 @@ body {
 
 #left_data10 #data_text10 {
     color: black;
-    line-height: -10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    line-height: 3px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #left_data10 #data_chiziq10 {
     width: 100%;
     line-height: -10px;
+    border: 0.2px solid black;
     margin-top: -5px;
 }
 
 #left_data10 #data_malumot10 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    text-align: center;
+    font-weight: normal;
+    font-family: 'dejavu serif';
+    font-size: 11px;
+    margin-top: -2px;
     padding-top: 2px;
-    /* width: 74%; */
 }
 
 #right_data10 {
     /* border: 1px solid blue; */
     float: right;
-    font-weight: 900;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
     padding-right: 15px;
     margin-top: 0px;
 }
@@ -679,9 +699,10 @@ body {
 }
 
 #data_text13 p {
-    font-weight: 900;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
 
 }
 
@@ -695,7 +716,7 @@ body {
 
 #qr_code {
     float: left;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #qiyoslovchi {
@@ -709,17 +730,18 @@ body {
     float: left;
     text-align: left;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 
 }
 
 #sanasi {
     float: right;
-    margin-right: 192px;
+    margin-right: 175px;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-family: 'dejavu serif';
 
 }
 
@@ -740,34 +762,36 @@ body {
 
 #q_title {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
 
 }
 
 #q_fish {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
+    font-family: 'dejavu serif';
+    font-weight: bold;
+    font-size: 13px;
     text-align: center;
 }
 
 #q_chiziq {
     line-height: -10px;
     margin-top: -10px;
+    border: 0.2px solid black;
 }
 
 #q_datatext {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
+    font-family: 'dejavu serif';
+    font-size: 11px;
     text-align: center;
     margin-top: -10px;
 }
 </style>
 
-<body style=" font-family: 'DejaVu Sans', san-serif; font-weight:normal">
+<body>
     <div id="container">
         <div>
             <h1 id="sarlavha">
@@ -798,7 +822,7 @@ body {
                 <p>Amal qilish muddati<br>
                     <?php
                       $date=date_create($shablon->amal_qilish_muddati);
-                      echo date_format($date,"Y") .' yil   '.'«'.date_format($date,"d").'» '; 
+                      echo date_format($date,"Y") .' yil   '.'«'.date_format($date,"d").'» ';
                       switch (date_format($date,"m")) {
                           case '01':
                               echo 'yanvar';
@@ -834,12 +858,12 @@ body {
                                                         echo 'noyabr';
                                                         break;
                                                     case '12':
-                                                          echo 'dekabr';                                                 
-                          
+                                                          echo 'dekabr';
+
                           default:
                               # code...
                               break;
-                      } 
+                      }
                       echo " gacha";
                 ?>
                 </p>
@@ -857,7 +881,7 @@ body {
         <div id="malumot">
             <div id="left_data">
                 <p id="data_text">
-                    «УПВССЖ 15/40 (0,02-16) m³/h
+                    {{ $shablon->etalonlar_nomi }}
                 </p>
 
                 <hr id="data_chiziq">
@@ -872,7 +896,7 @@ body {
         <div id="malumot1">
             <div id="left_data1">
                 <p id="data_text1">
-                    Ko'p funksiyali kalibrator MC-6; Yuk porshenli manometr МП-0.4
+                    {{ $shablon->xujjat_belgilanishi }}
                 </p>
                 <hr id="data_chiziq1">
                 <p id="data_malumot1">
@@ -886,7 +910,7 @@ body {
         <div id="malumot2">
             <div id="left_data2">
                 <p id="data_text2">
-                    O‘zMMI DM Qo'qon filiali
+                   {{ $shablon->metrologik_xizmat_nomi }}
                 </p>
                 <hr id="data_chiziq2">
                 <p id="data_malumot2">
@@ -900,7 +924,7 @@ body {
         <div id="malumot3">
             <div id="left_data3">
                 <p id="data_text3">
-                    "FIRDAVS HEALTHY DENTAL" MCHJ
+                    {{ $shablon->xizmat_egasi }}
                 </p>
                 <hr id="data_chiziq3">
                 <p id="data_malumot3">
@@ -914,7 +938,7 @@ body {
         <div id="malumot4">
             <div id="left_data4">
                 <p id="data_text4">
-                    Novator
+                   {{ $shablon->tayyorlovchi }}
                 </p>
                 <hr id="data_chiziq4">
                 <p id="data_malumot4">
@@ -927,7 +951,7 @@ body {
         <div id="malumot5">
             <div id="left_data5">
                 <p id="data_text5">
-                    ROSSIYA
+                   {{ $shablon->import_mamlakat }}
                 </p>
                 <hr id="data_chiziq5">
                 <p id="data_malumot5">
@@ -941,7 +965,7 @@ body {
         <div id="malumot6">
             <div id="left_data6">
                 <p id="data_text6">
-                    O'lchash ko'lami 0÷300 mmHg;
+                   {{ $shablon->parametrlari_nomi }}
                 </p>
                 <hr id="data_chiziq6">
                 <p id="data_malumot6">
@@ -953,7 +977,7 @@ body {
         <div id="malumot7">
             <div id="left_data7">
                 <p id="data_text7">
-                    shkala bolinmasi 2mmHg; ± 3mmHg
+                    {{ $shablon->xatolik_chegaralari }}
                 </p>
                 <hr id="data_chiziq7">
                 <p id="data_malumot7">
@@ -967,7 +991,7 @@ body {
         <div id="malumot8">
             <div id="left_data8">
                 <p id="data_text8">
-                    Sfigmomanometr Адъютор № 01202834
+                    {{ $shablon->nomlanishi_zavod_raqami }}
                 </p>
                 <hr id="data_chiziq8">
                 <p id="data_malumot8">
@@ -981,7 +1005,7 @@ body {
         <div id="malumot9">
             <div id="left_data9">
                 <p id="data_text9">
-                    O'z DSt 8.089-2020 “Mexanik , yarim avtomat va avtomat va avtomat noinvaziv arterial bosim
+                   {{ $shablon->normativ_hujjat_nomi }}
                 </p>
                 <hr id="data_chiziq9">
                 <p id="data_malumot9">
@@ -992,7 +1016,7 @@ body {
         <div id="malumot10">
             <div id="left_data10">
                 <p id="data_text10">
-
+                    {{ $shablon->turining_tarifi }}
                 </p>
                 <hr id="data_chiziq10">
                 <p id="data_malumot10">
@@ -1015,14 +1039,60 @@ body {
             </div>
             </ <div id="pasti">
             <div id="qr_code">
-                <img style="width:130px;"
-                    src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->generate('https://e-metralogiya.uz/certificate/result/45203')) }}">
+                <img style="width:140px;"
+                    src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->generate('http://e-metralogiya.uz/certificate/result/'.$shablon->id)) }}">
             </div>
             <div id="qiyoslovchi">
                 <p id="qiyoslash_sanasi">
                     Qiyoslash sanasi:
                 </p>
-                <p id="sanasi"> 2021 yil «15» oktabr</p>
+                <p id="sanasi"> <?php
+                    $date=date_create($shablon->sanasi);
+                    echo date_format($date,"Y") .' yil   '.'«'.date_format($date,"d").'» ';
+                    switch (date_format($date,"m")) {
+                        case '01':
+                            echo 'yanvar';
+                            break;
+                        case '02':
+                              echo 'fevral';
+                              break;
+                       case '03':
+                                  echo 'mart';
+                                  break;
+                              case '04':
+                                    echo 'aprel';
+                                    break;
+                                    case '05':
+                                      echo 'may';
+                                      break;
+                                  case '06':
+                                        echo 'iyun';
+                                        break;
+                                 case '07':
+                                            echo 'iyul';
+                                            break;
+                                        case '08':
+                                              echo 'avgust';
+                                              break;
+                                              case '09':
+                                                  echo 'sentabr';
+                                                  break;
+                                              case '10':
+                                                    echo 'oktabr';
+                                                    break;
+                                                    case '11':
+                                                      echo 'noyabr';
+                                                      break;
+                                                  case '12':
+                                                        echo 'dekabr';
+
+                        default:
+                            # code...
+                            break;
+                    }
+                    // echo " gacha";
+              ?>
+              </p>
                 <div id="qiyoslovchi_fish">
                     <div id="q_left">
                         <p id="q_title">
@@ -1032,8 +1102,7 @@ body {
 
                     <div id="q_right">
                         <p id="q_fish">
-                            MUXIDINOV XAYRILLO
-                            BURXONDINOVICH
+                            {{ $shablon->qiyoslovchi }}
                         </p>
                         <hr id="q_chiziq">
                         <p id="q_datatext">
@@ -1053,3 +1122,4 @@ body {
 </body>
 
 </html>
+

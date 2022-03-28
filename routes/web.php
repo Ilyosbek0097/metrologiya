@@ -21,6 +21,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/certificate/result/{id}',[AdminController::class,'download_qrcode_pdf'])->name('download_qrcode_pdf');
+
 Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
     Auth::routes();
 });
@@ -40,17 +42,21 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
 
         Route::get('allshablon',[AdminController::class,'allshablon'])->name('admin.allshablon');
         Route::get('download_pdf/{id}',[AdminController::class,'download_pdf'])->name('admin.download_pdf');
+        Route::get('print_pdf/{id}',[AdminController::class,'print_pdf'])->name('admin.print_pdf');
+        Route::get('edit_pdf/{id}',[AdminController::class,'edit_pdf'])->name('admin.edit_pdf');
+        Route::get('delete_pdf/{id}',[AdminController::class,'delete_pdf'])->name('admin.delete_pdf');
+
 
 
         Route::post('update-profile-info',[AdminController::class,'updateInfo'])->name('adminUpdateInfo');
         Route::post('change-profile-picture',[AdminController::class,'updatePicture'])->name('adminPictureUpdate');
         Route::post('change-password',[AdminController::class,'changePassword'])->name('adminChangePassword');
-       
+
 });
 
 Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHistory']], function(){
     Route::get('dashboard',[UserController::class,'index'])->name('user.dashboard');
     Route::get('profile',[UserController::class,'profile'])->name('user.profile');
     Route::get('settings',[UserController::class,'settings'])->name('user.settings');
-    
+
 });

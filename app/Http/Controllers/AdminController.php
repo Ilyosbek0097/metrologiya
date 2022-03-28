@@ -16,7 +16,7 @@ class AdminController extends Controller
 
         return view('dashboards.admins.index');
        }
-    
+
        function profile(){
            return view('dashboards.admins.profile');
        }
@@ -25,7 +25,7 @@ class AdminController extends Controller
        }
 
        function updateInfo(Request $request){
-           
+
                $validator = \Validator::make($request->all(),[
                    'name'=>'required',
                    'email'=> 'required|email|unique:users,email,'.Auth::user()->id,
@@ -56,7 +56,7 @@ class AdminController extends Controller
 
            //Upload new image
            $upload = $file->move(public_path($path), $new_name);
-           
+
            if( !$upload ){
                return response()->json(['status'=>0,'msg'=>'Something went wrong, upload new picture failed.']);
            }else{
@@ -109,7 +109,7 @@ class AdminController extends Controller
            if( !$validator->passes() ){
                return response()->json(['status'=>0,'error'=>$validator->errors()->toArray()]);
            }else{
-                
+
             $update = User::find(Auth::user()->id)->update(['password'=>\Hash::make($request->newpassword)]);
 
             if( !$update ){
@@ -138,6 +138,7 @@ class AdminController extends Controller
            $shablon->tayyorlovchi = $req->tayyorlovchi;
            $shablon->import_mamlakat = $req->import_mamlakat;
            $shablon->parametrlari_nomi = $req->parametrlari_nomi;
+           $shablon->xatolik_chegaralari = $req->xatolik_chegaralari;
            $shablon->nomlanishi_zavod_raqami = $req->nomlanishi_zavod_raqami;
            $shablon->normativ_hujjat_nomi = $req->normativ_hujjat_nomi;
            $shablon->turining_tarifi = $req->turining_tarifi;
@@ -169,6 +170,37 @@ class AdminController extends Controller
             // $html = mb_convert_encoding($pdf, 'HTML-ENTITIES', 'UTF-8');
             // $html_decode = html_entity_decode($html);
            $pdf->setPaper('A4','portrait');
-           return $pdf->stream('pdfpage.pdf');
+           return $pdf->download($id.'.pdf');
        }
+       public function print_pdf($id)
+       {
+           $path = base_path('124.jpg');
+           $type = pathinfo($path, PATHINFO_EXTENSION);
+           $data = file_get_contents($path);
+           $pic = 'data:image/' . $type. ';base64,' . base64_encode($data);
+           $shablon = Shablon::find($id);
+           $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('dashboards.admins.pdfpage',compact('shablon','pic'));
+            // $html = mb_convert_encoding($pdf, 'HTML-ENTITIES', 'UTF-8');
+            // $html_decode = html_entity_decode($html);
+           $pdf->setPaper('A4','portrait');
+           return $pdf->stream($id.'.pdf');
+       }
+      public function download_qrcode_pdf($id)
+      {
+        $path = base_path('124.jpg');
+        $type = pathinfo($path, PATHINFO_EXTENSION);
+        $data = file_get_contents($path);
+        $pic = 'data:image/' . $type. ';base64,' . base64_encode($data);
+        $shablon = Shablon::find($id);
+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('dashboards.admins.pdfpage',compact('shablon','pic'));
+         // $html = mb_convert_encoding($pdf, 'HTML-ENTITIES', 'UTF-8');
+         // $html_decode = html_entity_decode($html);
+        $pdf->setPaper('A4','portrait');
+        return $pdf->download($id.'.pdf');
+      }
+      public function edit_pdf($id)
+      {
+        $shablon = Shablon::find($id);
+        return view('dashboards.admins.edit_pdf',compact('shablon'));
+      }
 }
