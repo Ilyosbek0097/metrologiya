@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/certificate/result/{id}',[AdminController::class,'download_qrcode_pdf'])->name('download_qrcode_pdf');
@@ -43,7 +43,13 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
         Route::get('allshablon',[AdminController::class,'allshablon'])->name('admin.allshablon');
         Route::get('download_pdf/{id}',[AdminController::class,'download_pdf'])->name('admin.download_pdf');
         Route::get('print_pdf/{id}',[AdminController::class,'print_pdf'])->name('admin.print_pdf');
+        // Edit 
         Route::get('edit_pdf/{id}',[AdminController::class,'edit_pdf'])->name('admin.edit_pdf');
+        Route::get('newedit_pdf/{id}',[AdminController::class,'newedit_pdf'])->name('admin.newedit_pdf');
+        
+        Route::put('edit_form/{id}',[AdminController::class,'edit_form'])->name('admin.edit_form');
+        Route::post('newedit_form',[AdminController::class,'newedit_form'])->name('admin.newedit_form');
+        // Delete
         Route::get('delete_pdf/{id}',[AdminController::class,'delete_pdf'])->name('admin.delete_pdf');
 
 

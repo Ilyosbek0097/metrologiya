@@ -6,12 +6,11 @@
 <div class="col-md-12">
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Tahrirlash Bo'limi</h3>
+            <h3 class="card-title">Tahrirlab Yangi Hujjat Yaratish Bo'limi</h3>
         </div>
         <div class="card-body">
-            <form action="/admin/edit_form/{{ $shablon->id }}" method="POST">
-                @csrf
-                @method('put')
+            <form action="{{ route('admin.newedit_form')}}" method="POST">
+                @csrf               
                 <div class="form-group">
                     <label>(o'lchash vositasini qiyoslashni o'tkazgan metrologiya xizmatining nomi):</label>
                     <input required type="text" class="form-control" name="xizmat_nomi" value="{{ $shablon->xizmat_nomi}}">

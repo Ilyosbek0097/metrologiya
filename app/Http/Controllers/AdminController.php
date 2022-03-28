@@ -203,4 +203,56 @@ class AdminController extends Controller
         $shablon = Shablon::find($id);
         return view('dashboards.admins.edit_pdf',compact('shablon'));
       }
+      public function newedit_pdf($id)
+      {
+        $shablon = Shablon::find($id);
+        return view('dashboards.admins.newedit_pdf',compact('shablon'));
+
+      }
+      public function edit_form($id,Request $req)
+      {
+        $shablon = Shablon::findOrFail($id);
+        $shablon->xizmat_nomi = $req->xizmat_nomi;
+        $shablon->tartib_raqami = $req->tartib_raqami;
+        $shablon->amal_qilish_muddati = $req->amal_qilish_muddati;
+        $shablon->etalonlar_nomi = $req->etalonlar_nomi;
+        $shablon->xujjat_belgilanishi = $req->xujjat_belgilanishi;
+        $shablon->metrologik_xizmat_nomi = $req->metrologik_xizmat_nomi;
+        $shablon->xizmat_egasi = $req->xizmat_egasi;
+        $shablon->tayyorlovchi = $req->tayyorlovchi;
+        $shablon->import_mamlakat = $req->import_mamlakat;
+        $shablon->parametrlari_nomi = $req->parametrlari_nomi;
+        $shablon->xatolik_chegaralari = $req->xatolik_chegaralari;
+        $shablon->nomlanishi_zavod_raqami = $req->nomlanishi_zavod_raqami;
+        $shablon->normativ_hujjat_nomi = $req->normativ_hujjat_nomi;
+        $shablon->turining_tarifi = $req->turining_tarifi;
+        $shablon->qiyoslovchi = $req->qiyoslovchi;
+        $shablon->sanasi = $req->sanasi;
+
+        $shablon->save();
+        return redirect()->route('admin.allshablon');
+      }
+      public function newedit_form(Request $req)
+      {
+        $shablon = new Shablon;
+        $shablon->xizmat_nomi = $req->xizmat_nomi;
+        $shablon->tartib_raqami = $req->tartib_raqami;
+        $shablon->amal_qilish_muddati = $req->amal_qilish_muddati;
+        $shablon->etalonlar_nomi = $req->etalonlar_nomi;
+        $shablon->xujjat_belgilanishi = $req->xujjat_belgilanishi;
+        $shablon->metrologik_xizmat_nomi = $req->metrologik_xizmat_nomi;
+        $shablon->xizmat_egasi = $req->xizmat_egasi;
+        $shablon->tayyorlovchi = $req->tayyorlovchi;
+        $shablon->import_mamlakat = $req->import_mamlakat;
+        $shablon->parametrlari_nomi = $req->parametrlari_nomi;
+        $shablon->xatolik_chegaralari = $req->xatolik_chegaralari;
+        $shablon->nomlanishi_zavod_raqami = $req->nomlanishi_zavod_raqami;
+        $shablon->normativ_hujjat_nomi = $req->normativ_hujjat_nomi;
+        $shablon->turining_tarifi = $req->turining_tarifi;
+        $shablon->qiyoslovchi = $req->qiyoslovchi;
+        $shablon->sanasi = $req->sanasi;
+
+        $shablon->save();
+        return redirect()->route('admin.allshablon');
+      }
 }

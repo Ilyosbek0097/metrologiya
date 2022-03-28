@@ -20,6 +20,7 @@ class Shablon extends Model
         'tayyorlovchi',
         'import_mamlakat',
         'parametrlari_nomi',
+        'xatolik_chegaralari',
         'nomlanishi_zavod_raqami',
         'normativ_hujjat_nomi',
         'turining_tarifi',
