@@ -43,7 +43,7 @@
                                     <a href="{{ route('admin.edit_pdf',['id'=>$data->id])}}" class="btn btn-warning" ><i class="fa fa-edit" title="Tahrirlash"></i></a>
                                     <a href="{{ route('admin.download_pdf',['id'=>$data->id])}}" class="btn btn-info" ><i class="fa fa-download" title="Download"></i></a>
                                     <a href="{{ route('admin.print_pdf',['id'=>$data->id])}}" class="btn btn-success" ><i class="fa fa-eye" title="Print"></i></a>
-                                    <a href="{{ route('admin.delete_pdf',['id'=>$data->id])}}" class="btn btn-danger" ><i class="fa fa-trash" title="O'chirish"></i></a>
+                                    <a href="{{ route('admin.delete_pdf',['id'=>$data->id])}}" onclick="return confirm('Rostdan o`chirmoqchimisiz?')" class="btn btn-danger" ><i class="fa fa-trash" title="O'chirish"></i></a>
 
                                 </td>
                             </tr>
